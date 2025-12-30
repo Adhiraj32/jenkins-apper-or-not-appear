@@ -14,5 +14,13 @@ pipeline{
                 '''
             }
         }
+        stage('three'){
+            steps{
+                sh '''
+                git branch
+                git log -1
+                '''
+            }
+        }
     }
 }
