@@ -6,5 +6,13 @@ pipeline{
               sh 'cat message.txt'
             }
         }
+        stage('two'){
+            steps{
+                sh '''
+                pwd
+                ls
+                '''
+            }
+        }
     }
 }
